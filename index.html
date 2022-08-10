@@ -6,10 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Meemu Kitchen - Home</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__left">
+                    <a href="/" class="header__logolink">
+                        <img class="header__logoimage" src="./assets/images/logohead.png" alt="Meemu Kitchen">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__navlist">
+                            <li class="header__navlistitem active">
+                                <a href="/" class="header__navlinkitem ">Home</a>
+                            </li>
+                            <li class="header__navlistitem">
+                                <a href="/" class="header__navlinkitem active">OUR BAKERY</a>
+                            </li>
+                            <li class="header__navlistitem">
+                                <a href="/" class="header__navlinkitem active">ABOUT US</a>
+                            </li>
+                            <li class="header__navlistitem">
+                                <a href="/" class="header__navlinkitem active">CONTACT US</a>
+                            </li>
+                            <li class="header__navlistitem">
+                                <a href="/" class="header__navlinkitem active">CUSTOMISED CAKES</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__middle">
+
+                </div>
+                <div class="header__right">
+                    <a class="header__shoplink">
+                        <img src="./assets/images/shopping-cart.png" alt="Shopping Cart" class="header__shopimage">
+                    </a>
+                    <a href="#" class="header__acountlink">
+                        Your Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./assets/images/flowers.png" alt="Flowers.jpg" class="header_flowerimage"> -->
+
+    </header>
+    <section class="herohome">
+        <div class="homehero__baked">
+            <h1 class="homehero__bakedtitle homehero__bakedtitle_left">Baked <span class="homehero__bakedsubtitle">with
+                    love</span></h1>
+            <h1 class="homehero__bakedtitle ">JUST FOR YOU</h1>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper homehero__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper homehero__swiperwrapper">
+                <!-- Slides -->
+                <div class="swiper-slide homehero__swiperslider">
+                    <img src="./assets/images/hero1.png" alt="SlideImage1.jpg" class="homehero__slideimage">
+                </div>
+                <div class="swiper-slide homehero__swiperslider"> <img src="./assets/images/hero2.png"
+                        alt="SlideImage2.jpg" class="homehero__slideimage"></div>
+                <div class="swiper-slide homehero__swiperslider"> <img src="./assets/images/hero3.png"
+                        alt="SlideImage3.jpg" class="homehero__slideimage"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><img src="./assets/images/prev.png" alt="HeroPrev.jpg"></div>
+            <div class="swiper-button-next"><img src="./assets/images/next.png" alt="HeroNext.jpg"></div>
+            <div class="homehero__swiperlinks">
+                <a href="#" class="homehero__swiperlink">
+                    <img src="./assets/images/ordernow.png" alt="ordernow.jpg" class="homehero_ordernow">
+                </a>
+                <a href="#" class="homehero__swiperlink">
+                    <img src="./assets/images/whatsapp.png" alt="whatsapp.jpg" class="homehero_whatsapp">
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
 </body>
