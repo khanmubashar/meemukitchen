@@ -9,6 +9,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    line-height: 100%;
+}
+
 .container {
     width: 100%;
     max-width: 1377px;
@@ -60,8 +71,13 @@ img {
 
 .header {
     border: 2px solid #C56677;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 99;
 }
+
 
 .header__navlinkitem {
     color: #C56677;
@@ -106,3 +122,88 @@ a:hover {
     position: relative;
 }
 
+.herohome {
+    margin-top: 118px;
+}
+
+.homehero__swiper {
+    width: 100%;
+    height: 750px;
+}
+
+.homehero__baked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homehero__bakedtitle {
+    color: #C56677;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.homehero__bakedsubtitle {
+    color: #898989;
+    text-transform: lowercase;
+}
+
+.homehero__bakedtitle_left {
+    margin-left: 85px;
+    margin-bottom: 5px;
+}
+
+.homehero__baked {
+    padding: 10px 0;
+}
+
+.homehero__swiper .swiper-button-next::after,
+.homehero__swiper .swiper-button-prev::after {
+    content: none !important;
+}
+
+.homehero__swiper .swiper-button-prev {
+    left: 10%;
+}
+
+.homehero__swiper .swiper-button-next {
+    right: 10%;
+}
+
+.homehero__swiper .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    background: #fff !important;
+    opacity: .5 !important;
+}
+
+.homehero__swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+.homehero__swiper .swiper-horizontal>.swiper-pagination-bullets,
+.homehero__swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.homehero__swiper .swiper-pagination-custom,
+.homehero__swiper .swiper-pagination-fraction {
+    bottom: 50px;
+}
+
+.homehero__swiperlinks {
+    position: absolute;
+    bottom:30px;
+    left: 0;
+    z-index: 99;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.homehero__slideimage {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
