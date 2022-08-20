@@ -1,0 +1,80 @@
+.contect-hero{
+    margin-top: 107px;
+}
+.map-box iframe {
+    border-radius: 62px;
+    border: 4px solid #707070 !important;
+}
+.near-heading {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.direction-box{
+    box-shadow: 0px 7px 11px #00000029;
+border: 1px solid #C56677;
+border-radius: 38px;
+padding-top: 45px;
+padding-left: 45px;
+padding-bottom: 45px;
+}
+.direction-label {
+    margin-bottom: 10px;
+}
+.direction-btn button {
+    border-radius: 26px;
+    padding: 14px;
+}
+.direction-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.Directions {
+    background: #C56677;
+    border: none;
+}
+.Directions a{
+    color: #fff;
+    font-weight: 400;
+}
+button.ShopNow {
+    border: 1px solid #C56677;
+    background: none;
+    margin-left: 6px;
+}
+
+.ShopNow a {
+    color: #C56677;
+    font-family: 400;
+}
+.direction-list{
+    height: 360px;
+    overflow-y: scroll;
+}
+.near-heading span {
+    color: #C56677;
+}
+.near-heading{
+    color: #6F6F6F;
+}
+
+.titel-tags {
+    display: flex;
+    justify-content: space-between;
+}
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+}
+.product-img-name{
+    display: flex;
+}
+.productimg {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    background: #C56677;
+    padding-top: 44px;
+    color: #fff;
+}
