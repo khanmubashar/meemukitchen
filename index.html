@@ -1,5 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="  https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+=======
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +51,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./alistyle.css">
 
+>>>>>>> main
     <title>Meemu Kitchen - Home</title>
   </head>
 
@@ -403,12 +443,370 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal right fade show"
+      id="cartsidebar"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel2"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="cartsidebar_imagecontainer">
+            <button
+              type="button"
+              class="btn_close_sidebar"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="cartsidebar_content">
+            <h2 class="cartsidebar_title">Your Order</h2>
+            <div class="cartsidebar_orderlist">
+              <div class="cartsidebar_orderitem">
+                <div class="cartsidebar_orderitem_left">
+                  <img
+                    src="./assets/images/auth_bg.png"
+                    alt="order image"
+                    class="cartsidebar_orderitemimage"
+                  />
+                  <div class="cartsidebar_orderitem_lefttextblock">
+                    <h3 class="cartsidebar_orderitemtitle">
+                      Chocolate Fudge Cake
+                    </h3>
+                    <h3 class="cartsidebar_orderitemprice">1600 Rs</h3>
+                  </div>
+                </div>
+                <div class="cartsidebar_orderitem_right">
+                  <button
+                    type="button"
+                    class="btn_close_orderitem"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                  </button>
+                  <div class="cartsidebar_orderiteminput">
+                    <form action="">
+                      <div class="row align-items-center">
+                        <div class="col-md-12">
+                          <div class="ordersidebar_quantityincremental">
+                            <button class="qtyminus" aria-hidden="true">
+                              −
+                            </button>
+                            <input
+                              type="number"
+                              name="qty"
+                              id="qty"
+                              min="1"
+                              max="10"
+                              step="1"
+                              value="1"
+                            />
+                            <button class="qtyplus" aria-hidden="true">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cartsidebar_orderitem">
+                <div class="cartsidebar_orderitem_left">
+                  <img
+                    src="./assets/images/auth_bg.png"
+                    alt="order image"
+                    class="cartsidebar_orderitemimage"
+                  />
+                  <div class="cartsidebar_orderitem_lefttextblock">
+                    <h3 class="cartsidebar_orderitemtitle">
+                      Chocolate Fudge Cake
+                    </h3>
+                    <h3 class="cartsidebar_orderitemprice">1600 Rs</h3>
+                  </div>
+                </div>
+                <div class="cartsidebar_orderitem_right">
+                  <button
+                    type="button"
+                    class="btn_close_orderitem"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                  </button>
+                  <div class="cartsidebar_orderiteminput">
+                    <form action="">
+                      <div class="row align-items-center">
+                        <div class="col-md-12">
+                          <div class="ordersidebar_quantityincremental">
+                            <button class="qtyminus" aria-hidden="true">
+                              −
+                            </button>
+                            <input
+                              type="number"
+                              name="qty"
+                              id="qty"
+                              min="1"
+                              max="10"
+                              step="1"
+                              value="1"
+                            />
+                            <button class="qtyplus" aria-hidden="true">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cartsidebar_orderitem">
+                <div class="cartsidebar_orderitem_left">
+                  <img
+                    src="./assets/images/auth_bg.png"
+                    alt="order image"
+                    class="cartsidebar_orderitemimage"
+                  />
+                  <div class="cartsidebar_orderitem_lefttextblock">
+                    <h3 class="cartsidebar_orderitemtitle">
+                      Chocolate Fudge Cake
+                    </h3>
+                    <h3 class="cartsidebar_orderitemprice">1600 Rs</h3>
+                  </div>
+                </div>
+                <div class="cartsidebar_orderitem_right">
+                  <button
+                    type="button"
+                    class="btn_close_orderitem"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                  </button>
+                  <div class="cartsidebar_orderiteminput">
+                    <form action="">
+                      <div class="row align-items-center">
+                        <div class="col-md-12">
+                          <div class="ordersidebar_quantityincremental">
+                            <button class="qtyminus" aria-hidden="true">
+                              −
+                            </button>
+                            <input
+                              type="number"
+                              name="qty"
+                              id="qty"
+                              min="1"
+                              max="10"
+                              step="1"
+                              value="1"
+                            />
+                            <button class="qtyplus" aria-hidden="true">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cartsidebar_orderitem">
+                <div class="cartsidebar_orderitem_left">
+                  <img
+                    src="./assets/images/auth_bg.png"
+                    alt="order image"
+                    class="cartsidebar_orderitemimage"
+                  />
+                  <div class="cartsidebar_orderitem_lefttextblock">
+                    <h3 class="cartsidebar_orderitemtitle">
+                      Chocolate Fudge Cake
+                    </h3>
+                    <h3 class="cartsidebar_orderitemprice">1600 Rs</h3>
+                  </div>
+                </div>
+                <div class="cartsidebar_orderitem_right">
+                  <button
+                    type="button"
+                    class="btn_close_orderitem"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                  </button>
+                  <div class="cartsidebar_orderiteminput">
+                    <form action="">
+                      <div class="row align-items-center">
+                        <div class="col-md-12">
+                          <div class="ordersidebar_quantityincremental">
+                            <button class="qtyminus" aria-hidden="true">
+                              −
+                            </button>
+                            <input
+                              type="number"
+                              name="qty"
+                              id="qty"
+                              min="1"
+                              max="10"
+                              step="1"
+                              value="1"
+                            />
+                            <button class="qtyplus" aria-hidden="true">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="cartsidebar_title">Billing Details</h2>
+            <form action="">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Street Address"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+            </form>
+            <h2 class="cartsidebar_title">Payment Details</h2>
+            <div class="customcake_checkcontainer cartsidebar_checkcontainer">
+              <div class="pretty p-default p-round">
+                <input type="radio" name="radio1" />
+                <div class="state">
+                  <label>Cash on Delivery</label>
+                </div>
+              </div>
+              <div class="pretty p-default p-round">
+                <input type="radio" name="radio1" />
+                <div class="state">
+                  <label>Online Payment</label>
+                </div>
+              </div>
+            </div>
+            <form action="" class="storepickup">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Card Number"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control cartsidebar_input"
+                    placeholder="Expiry Date"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="selectcheckout">
+              <button class="btn btn-outline-primary selectcheckout_btn">
+                Delivery
+              </button>
+              <button class="btn btn-outline-primary selectcheckout_btn">
+                Store Pickup
+              </button>
+            </div>
+            <div class="carttotal">
+              <div class="carttotal_left">
+                <h2 class="carttotal_title">Sub Total</h2>
+                <h2 class="carttotal_points">You have 1600 Points!</h2>
+              </div>
+              <div class="carttotal_right">
+                <h2 class="carttotal_price">1600rs</h2>
+              </div>
+            </div>
+            <div class="cartcoupon">
+              <h2 class="cartcoupon_title">Want to Apply Coupon?</h2>
+              <button class="btn btn-outline-primary cartcoupon_btn">
+                Redeem Points
+              </button>
+            </div>
+            <button class="btn btn-primary cartcheckout_btn">Checkout</button>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="promo">
+                    <h5 class="promo-code"> Enter Promo Code</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel repudiandae autem!</p>
+
+                    <input class="form-control promo-input" type="text" placeholder="Enter Code">
+                    <div class="modal-promo-footer">
+                        <button type="button" class="btn btn-secondary promo-button" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+      <!-- modal -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="./assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
