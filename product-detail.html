@@ -28,11 +28,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Meemu Kitchen - Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Meemu Kitchen - ProductDetail</title>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header navbar navbar-expand-xl navbar-light bg-light">
       <div class="container">
         <div class="header__content">
           <div class="header__left">
@@ -43,9 +47,69 @@
                 alt="Meemu Kitchen"
               />
             </a>
-            <nav class="header__nav">
+            <nav class="header__nav dontshow">
               <ul class="header__navlist">
                 <li class="header__navlistitem active">
+                  <a href="/" class="header__navlinkitem">Home</a>
+                </li>
+                <li class="header__navlistitem">
+                  <a href="./shop.html" class="header__navlinkitem active"
+                    >OUR BAKERY</a
+                  >
+                </li>
+                <li class="header__navlistitem">
+                  <a href="./about.html" class="header__navlinkitem active"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="header__navlistitem">
+                  <a
+                    href="./Find-Us-Near-You.html"
+                    class="header__navlinkitem active"
+                    >CONTACT US</a
+                  >
+                </li>
+                <li class="header__navlistitem">
+                  <a href="./customcake.html" class="header__navlinkitem active"
+                    >CUSTOMISED CAKES</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__middle"></div>
+          <div class="header__right">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#cartsidebar"
+              class="header__shoplink"
+            >
+              <img
+                src="./assets/images/shopping-cart.png"
+                alt="Shopping Cart"
+                class="header__shopimage"
+              />
+            </a>
+            <a href="./profile.html" class="header__acountlink dontshow">
+              Your Profile
+            </a>
+          </div>
+          <div class="collapse navbar-collapse dontshow" id="navbarText">
+            <nav class="header__nav">
+              <ul class="header__navlist">
+                <li class="header__navlistitem">
                   <a href="/" class="header__navlinkitem">Home</a>
                 </li>
                 <li class="header__navlistitem">
@@ -62,25 +126,18 @@
                     >CUSTOMISED CAKES</a
                   >
                 </li>
+                <li class="header__navlistitem">
+                  <a href="./profile.html" class="header__navlinkitem active"
+                    >Your Profile</a
+                  >
+                </li>
               </ul>
             </nav>
-          </div>
-          <div class="header__middle"></div>
-          <div class="header__right">
-            <a class="header__shoplink">
-              <img
-                src="./assets/images/shopping-cart.png"
-                alt="Shopping Cart"
-                class="header__shopimage"
-              />
-            </a>
-            <a href="#" class="header__acountlink"> Your Profile </a>
           </div>
         </div>
       </div>
       <!-- <img src="./assets/images/flowers.png" alt="Flowers.jpg" class="header_flowerimage"> -->
     </header>
-
     <section class="productdetail">
       <div class="container">
         <div class="productdetail_content">
@@ -131,6 +188,53 @@
                   </div>
                 </div>
               </div>
+              <div
+                class="productdetail_similarproducts productdetail_similarproducts-mobile"
+              >
+                <h3 class="productdetail_similar">Similar Products</h3>
+                <!-- Slider main container -->
+                <div class="swiper productdetail__swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper productdetail__swiperwrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide productdetail__swiperslider">
+                      <img
+                        src="./assets/images/hero1.png"
+                        alt="SlideImage1.jpg"
+                        class="productdetail__slideimage"
+                      />
+                    </div>
+                    <div class="swiper-slide productdetail__swiperslider">
+                      <img
+                        src="./assets/images/hero2.png"
+                        alt="SlideImage2.jpg"
+                        class="productdetail__slideimage"
+                      />
+                    </div>
+                    <div class="swiper-slide productdetail__swiperslider">
+                      <img
+                        src="./assets/images/hero3.png"
+                        alt="SlideImage3.jpg"
+                        class="productdetail__slideimage"
+                      />
+                    </div>
+                    <div class="swiper-slide productdetail__swiperslider">
+                      <img
+                        src="./assets/images/hero3.png"
+                        alt="SlideImage3.jpg"
+                        class="productdetail__slideimage"
+                      />
+                    </div>
+                    <div class="swiper-slide productdetail__swiperslider">
+                      <img
+                        src="./assets/images/hero3.png"
+                        alt="SlideImage3.jpg"
+                        class="productdetail__slideimage"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6">
               <div class="productdetail_right">
@@ -141,7 +245,9 @@
                     class="productdetail_productimage"
                   />
                 </div>
-                <div class="productdetail_similarproducts">
+                <div
+                  class="productdetail_similarproducts productdetail_similarproducts-desktop"
+                >
                   <h3 class="productdetail_similar">Similar Products</h3>
                   <!-- Slider main container -->
                   <div class="swiper productdetail__swiper">
@@ -196,8 +302,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row align-items-center">
+            <div class="col-xl-4 footer_column">
               <form class="footer__form" action="">
                 <div class="row">
                   <div class="col-md-6">
@@ -221,12 +327,12 @@
                 </div>
               </form>
             </div>
-            <div class="col-md-2">
+            <div class="col-xl-2 d-xl-block d-none">
               <div class="seperator"></div>
             </div>
-            <div class="col-md-6">
-              <div class="row align-items-center h-100">
-                <div class="col-md-6">
+            <div class="col-xl-6">
+              <div class="row h-100">
+                <div class="col-sm-6 footer_column">
                   <div class="footer__textblock">
                     <h4 class="footer__texttitle">Address</h4>
                     <h4 class="footer__textsubtitle">DHA Z Block phase 3</h4>
@@ -256,8 +362,8 @@
                     <h4 class="footer__socialtext">@meemuskitchen</h4>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="footer__textblock">
+                <div class="col-sm-6 footer_column mb-0">
+                  <div class="footer__textblock mb-0">
                     <h4 class="footer__texttitle">Website Overview</h4>
                     <h4 class="footer__textsubtitle">Our Menu</h4>
                     <h4 class="footer__textsubtitle">Contact Us</h4>

@@ -121,7 +121,7 @@ a:hover {
 }
 
 .herohome {
-  margin-top: 118px;
+  margin-top: 126px;
 }
 
 .homehero__swiper {
@@ -131,7 +131,8 @@ a:hover {
 
 .homehero__baked {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -147,13 +148,8 @@ a:hover {
   text-transform: lowercase;
 }
 
-.homehero__bakedtitle_left {
-  margin-left: 85px;
-  margin-bottom: 5px;
-}
-
 .homehero__baked {
-  padding: 10px 0;
+  padding: 25px 0;
 }
 
 .homehero__swiper .swiper-button-next::after,
@@ -711,12 +707,13 @@ a:hover {
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 500px;
+  width: 100%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
+  max-width: 500px;
 }
 
 .modal.left .modal-content,
@@ -1628,6 +1625,10 @@ a:hover {
   margin-bottom: 25px;
 }
 
+.productdetail_similarproducts-mobile {
+  display: none;
+}
+
 @media (max-width: 1450px) {
   .header__logoimage {
     width: 100%;
@@ -1637,6 +1638,10 @@ a:hover {
   .header__navlinkitem {
     padding: 0;
     font-size: 14px;
+  }
+
+  .herohome {
+    margin-top: 94px;
   }
 }
 @media (max-width: 1200px) {
@@ -1755,6 +1760,20 @@ a:hover {
 }
 
 @media (max-width: 992px) {
+  .productdetail_similarproducts {
+    margin-top: 50px;
+  }
+
+  .productdetail_leftbottom {
+    width: 100%;
+  }
+
+  .productdetail_similar {
+    font-size: 25px;
+    color: #c56677;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
   .customcake_imageleftcontainer {
     margin-bottom: 30px;
   }
@@ -1802,6 +1821,26 @@ a:hover {
   .customcake_uploadphoto {
     margin-top: 0;
   }
+
+  .customcake_imageleft {
+    width: 100%;
+    margin-left: -15px;
+    max-width: 320px;
+  }
+
+  .customcake_imageright {
+    width: 100%;
+    margin-right: 0px;
+    max-width: 320px;
+    margin-left: auto;
+  }
+
+  .productdetail_similarproducts-desktop {
+    display: none;
+  }
+  .productdetail_similarproducts-mobile {
+    display: block;
+  }
 }
 @media (max-width: 768px) {
   .customcake_list {
@@ -1839,8 +1878,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-direction: row-reverse;
   }
-
   .footer {
     padding: 30px 0;
   }
@@ -1981,4 +2020,50 @@ a:hover {
     font-size: 25px;
     margin-bottom: 30px;
   }
+
+  .productdetail_addbtn {
+    font-size: 14px;
+  }
+
+  .homehero__bakedtitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .cartsidebar_orderitemimage {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+
+.cartsidebar_orderitemtitle {
+  color: #c56677;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.cartsidebar_orderitemprice {
+  color: #c56677;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.ordersidebar_quantityincremental button {
+  border: none;
+  background: unset;
+  padding: 0px 6px;
+  color: #c56677;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.selectcheckout_btn {
+  height: 45px;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 50%;
+  font-weight: 400;
+}
 }
