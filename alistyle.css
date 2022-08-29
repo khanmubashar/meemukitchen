@@ -97,6 +97,16 @@ button.ShopNow {
     margin-bottom: 0px;
     margin-top: 10px;
 }
+.password-reset{
+    padding: 35px 60px ;
+}
+.Proceed-btn {
+    font-size: 15px;
+    padding: 0;
+}
+.Proceed-btn-col {
+    padding: 0px 30px;
+}
 .tabs-col {
     display: flex;
     align-items: center;
