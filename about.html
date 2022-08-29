@@ -36,7 +36,14 @@
   </head>
 
   <body>
-    <header class="header">
+  <div class="myloader">
+      <img
+        src="./assets/images/logohead.png"
+        alt="logo"
+        class="animate__pulse animate__animated animate__infinite"
+      />
+    </div>
+    <header class="header navbar navbar-expand-xl navbar-light bg-light">
       <div class="container">
         <div class="header__content">
           <div class="header__left">
@@ -47,6 +54,66 @@
                 alt="Meemu Kitchen"
               />
             </a>
+            <nav class="header__nav dontshow">
+              <ul class="header__navlist">
+                <li class="header__navlistitem">
+                  <a href="/" class="header__navlinkitem">Home</a>
+                </li>
+                <li class="header__navlistitem">
+                  <a href="./shop.html" class="header__navlinkitem active"
+                    >OUR BAKERY</a
+                  >
+                </li>
+                <li class="header__navlistitem active">
+                  <a href="./about.html" class="header__navlinkitem active"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="header__navlistitem">
+                  <a
+                    href="./Find-Us-Near-You.html"
+                    class="header__navlinkitem active"
+                    >CONTACT US</a
+                  >
+                </li>
+                <li class="header__navlistitem">
+                  <a href="./customcake.html" class="header__navlinkitem active"
+                    >CUSTOMISED CAKES</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__middle"></div>
+          <div class="header__right">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#cartsidebar"
+              class="header__shoplink"
+            >
+              <img
+                src="./assets/images/shopping-cart.png"
+                alt="Shopping Cart"
+                class="header__shopimage"
+              />
+            </a>
+            <a href="./profile.html" class="header__acountlink dontshow">
+              Your Profile
+            </a>
+          </div>
+          <div class="collapse navbar-collapse dontshow" id="navbarText">
             <nav class="header__nav">
               <ul class="header__navlist">
                 <li class="header__navlistitem active">
@@ -66,25 +133,18 @@
                     >CUSTOMISED CAKES</a
                   >
                 </li>
+                <li class="header__navlistitem">
+                  <a href="./profile.html" class="header__navlinkitem active"
+                    >Your Profile</a
+                  >
+                </li>
               </ul>
             </nav>
-          </div>
-          <div class="header__middle"></div>
-          <div class="header__right">
-            <a class="header__shoplink">
-              <img
-                src="./assets/images/shopping-cart.png"
-                alt="Shopping Cart"
-                class="header__shopimage"
-              />
-            </a>
-            <a href="#" class="header__acountlink"> Your Profile </a>
           </div>
         </div>
       </div>
       <!-- <img src="./assets/images/flowers.png" alt="Flowers.jpg" class="header_flowerimage"> -->
     </header>
-
     <section class="aboutus">
       <div class="aboutus_content">
         <div class="row">
@@ -147,15 +207,27 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row align-items-center">
+            <div class="col-xl-4 footer_column">
               <form class="footer__form" action="">
                 <div class="row">
                   <div class="col-md-6">
-                    <input class="footer__input" type="email" name="" id="" />
+                    <input
+                      class="footer__input"
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Name"
+                    />
                   </div>
                   <div class="col-md-6">
-                    <input class="footer__input" type="email" name="" id="" />
+                    <input
+                      class="footer__input"
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="Email"
+                    />
                   </div>
                   <div class="col-md-12">
                     <textarea
@@ -172,12 +244,12 @@
                 </div>
               </form>
             </div>
-            <div class="col-md-2">
+            <div class="col-xl-2 d-xl-block d-none">
               <div class="seperator"></div>
             </div>
-            <div class="col-md-6">
-              <div class="row align-items-center h-100">
-                <div class="col-md-6">
+            <div class="col-xl-6">
+              <div class="row h-100">
+                <div class="col-sm-6 footer_column">
                   <div class="footer__textblock">
                     <h4 class="footer__texttitle">Address</h4>
                     <h4 class="footer__textsubtitle">DHA Z Block phase 3</h4>
@@ -194,27 +266,35 @@
                     <h4 class="footer__textsubtitle">+92 321 4593698</h4>
                   </div>
                   <div class="footer__social">
-                    <img
-                      src="./assets/images/logohead.png"
-                      alt="facebook.png"
-                      class="footer__socialicon"
-                    />
-                    <img
-                      src="./assets/images/logohead.png"
-                      alt="facebook.png"
-                      class="footer__socialicon"
-                    />
+                    <ion-icon
+                      class="footer__socialicon text-white"
+                      name="logo-instagram"
+                    ></ion-icon>
+                    <ion-icon
+                      class="footer__socialicon text-white"
+                      name="logo-facebook"
+                    ></ion-icon>
                     <h4 class="footer__socialtext">@meemuskitchen</h4>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="footer__textblock">
+                <div class="col-sm-6 footer_column mb-0">
+                  <div class="footer__textblock mb-0">
                     <h4 class="footer__texttitle">Website Overview</h4>
-                    <h4 class="footer__textsubtitle">Our Menu</h4>
-                    <h4 class="footer__textsubtitle">Contact Us</h4>
-                    <h4 class="footer__textsubtitle">hOME</h4>
-                    <h4 class="footer__textsubtitle">hOME</h4>
-                    <h4 class="footer__textsubtitle">hOME</h4>
+                    <a href="/" class="footer__textsubtitle">Home</a>
+                    <a href="./shop.html" class="footer__textsubtitle"
+                      >Our Bakery</a
+                    >
+                    <a href="./about.html" class="footer__textsubtitle"
+                      >About Us</a
+                    >
+                    <a
+                      href="./Find-Us-Near-You.html"
+                      class="footer__textsubtitle"
+                      >Contact Us</a
+                    >
+                    <a href="./customcake.html" class="footer__textsubtitle"
+                      >Customized Cakes</a
+                    >
                   </div>
                 </div>
               </div>

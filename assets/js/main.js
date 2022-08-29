@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+  //....
+    document.querySelector(".myloader").style.display = "none";
+});
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
