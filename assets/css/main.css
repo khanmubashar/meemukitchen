@@ -945,7 +945,7 @@ a:hover {
 }
 
 .productdetail_productimagecontainer {
-  height: 35vw;
+  height: 25vw;
   width: 100%;
   border: 5px solid #c56677;
   border-radius: 15px;
@@ -1698,6 +1698,24 @@ a:hover {
   font-weight: 600;
 }
 
+.homehero__swiper {
+  width: 100%;
+  height: calc(700px);
+}
+
+.smoothee__listitem img {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.smoothee__listitem:hover img {
+  transform: scale(1.1);
+}
+
+.bakes {
+  padding-top: 50px;
+}
+
 @media (max-width: 1450px) {
   .successorder {
     margin-top: 94px;
@@ -1705,7 +1723,7 @@ a:hover {
 
   .homehero__swiper {
     width: 100%;
-    height: calc(100vh - 190px);
+    height: calc(700px);
   }
 
   .header__logoimage {
@@ -1838,7 +1856,7 @@ a:hover {
 
   .homehero__swiper {
     width: 100%;
-    height: calc(100vh - 190px);
+    height: calc(700px);
   }
 }
 
@@ -2093,6 +2111,10 @@ a:hover {
 }
 
 @media (max-width: 575px) {
+  .bakes {
+    padding-top: 30px;
+  }
+
   .customcake_list {
     max-width: 100%;
     flex: 100%;
