@@ -129,6 +129,7 @@ a:hover {
   width: 100%;
   height: calc(100vh - 220px);
 }
+
 .homehero__baked {
   display: flex;
   flex-direction: row;
@@ -176,7 +177,7 @@ a:hover {
   opacity: 1 !important;
 }
 
-.homehero__swiper .swiper-horizontal > .swiper-pagination-bullets,
+.homehero__swiper .swiper-horizontal>.swiper-pagination-bullets,
 .homehero__swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
 .homehero__swiper .swiper-pagination-custom,
 .homehero__swiper .swiper-pagination-fraction {
@@ -330,6 +331,7 @@ a:hover {
 .footer__input::placeholder {
   color: #fff;
 }
+
 .footer__textarea {
   width: 100%;
   border-radius: 30px;
@@ -1095,11 +1097,7 @@ a:hover {
   border-color: #c56677 !important;
 }
 
-.customcake_checkcontainer
-  .pretty.p-default
-  input:checked
-  ~ .state
-  label:after {
+.customcake_checkcontainer .pretty.p-default input:checked~.state label:after {
   background-color: #c56677 !important;
 }
 
@@ -1328,7 +1326,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.orderhistorylist_listitem > div {
+.orderhistorylist_listitem>div {
   width: 50%;
 }
 
@@ -1405,13 +1403,13 @@ a:hover {
   display: none !important;
 }
 
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
   display: unset !important;
 }
 
@@ -1680,6 +1678,7 @@ a:hover {
   margin-bottom: 15px;
   color: #c56677;
 }
+
 .successorder__subtitle {
   font-size: 20px;
   font-weight: 400;
@@ -1702,11 +1701,20 @@ a:hover {
   width: 100%;
   height: calc(700px);
 }
+.smoothee__listitem:nth-child(2) img {
+  width: 70%;
+}
+
+.smoothee__listitem:nth-child(3) img {
+  width: 84%;
+  margin-top: 67px;
+}
 
 .smoothee__listitem img {
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
+
 
 .smoothee__listitem:hover img {
   transform: scale(1.1);
@@ -1739,11 +1747,17 @@ a:hover {
   .herohome {
     margin-top: 94px;
   }
+
+  .smoothee__listtitle {
+    font-size: 35px;
+  }
 }
+
 @media (max-width: 1200px) {
   .product_image {
     height: 25vw;
   }
+
   .header__nav.dontshow {
     display: none !important;
   }
@@ -1751,6 +1765,7 @@ a:hover {
   .navbar-expand-xl .navbar-collapse.dontshow.show {
     display: flex !important;
   }
+
   .header__acountlink.dontshow {
     display: none !important;
   }
@@ -1841,6 +1856,7 @@ a:hover {
   .aboutus {
     margin-top: 78px;
   }
+
   .customcake {
     margin-top: 78px;
   }
@@ -1857,6 +1873,15 @@ a:hover {
   .homehero__swiper {
     width: 100%;
     height: calc(700px);
+  }
+
+  .smoothee__listitem:nth-child(2) img {
+    width: 100%;
+  }
+
+  .smoothee__listitem:nth-child(3) img {
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -1875,9 +1900,11 @@ a:hover {
     font-weight: 500;
     margin-bottom: 15px;
   }
+
   .customcake_imageleftcontainer {
     margin-bottom: 30px;
   }
+
   .product_image {
     height: 30vw;
   }
@@ -1939,11 +1966,22 @@ a:hover {
   .productdetail_similarproducts-desktop {
     display: none;
   }
+
   .productdetail_similarproducts-mobile {
     display: block;
   }
 }
+
 @media (max-width: 768px) {
+
+  .smoothee__listitem:nth-child(4) img {
+    margin-left: 40px;
+  }
+
+  .smoothee__listitem:nth-child(1) img {
+    margin-left: 40px;
+  }
+
   .customcake_list {
     max-width: 50%;
     flex: 50%;
@@ -1953,16 +1991,20 @@ a:hover {
   .productdetail__slideimage {
     height: 20vw;
   }
+
   .productdetail {
     padding: 30px 0;
   }
+
   .products {
     padding: 30px 0;
     padding-bottom: 0;
   }
+
   .product_image {
     height: 70vw;
   }
+
   .container {
     width: 100%;
     max-width: 100%;
@@ -1981,6 +2023,7 @@ a:hover {
     gap: 15px;
     flex-direction: row-reverse;
   }
+
   .footer {
     padding: 30px 0;
   }
@@ -2079,6 +2122,7 @@ a:hover {
   .categoriesslider_swiper .swiper-rtl .swiper-button-next {
     display: none;
   }
+
   .categoriesslider_swiper .swiper-button-next,
   .categoriesslider_swiper .swiper-rtl .swiper-button-prev {
     display: none;
@@ -2170,5 +2214,9 @@ a:hover {
     font-size: 16px;
     width: 50%;
     font-weight: 400;
+  }
+
+  .footer_contactbtn {
+    justify-content: flex-start !important;
   }
 }
